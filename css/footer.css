@@ -1,0 +1,78 @@
+*{
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+footer{
+	background-color: #ddd;
+
+}
+.footer{
+	padding:  40px;
+	display:  flex;
+	flex-direction: row;
+}
+.contact,
+.newsletter{
+	flex-grow: 1;
+}
+.contact{
+	max-width: 45%;
+}
+.contact nav ul li{
+	padding: 0 15px;
+	flex: 1;
+	display: inline-block;
+}
+.contact nav ul li a{
+	font-family: "Oswald", sans-serif;
+	color:   #B93620;
+	font-weight: 100;
+	font-size: 1.5em;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+}
+.social-media li{
+	display: inline-block;
+	padding:  20px;
+}
+.social-media li a i {
+  	font-size: 3em; 
+}
+.newsletter{
+	margin-left:  20%;
+	background-color: #fff;
+	border-radius:  5px;
+	padding: 30px;
+	height: 50%;
+}
+
+.newsletter h3{
+	margin-top: 0;
+	font-style: italic;
+	font-family: "Droid Serif", serif;
+	font-weight: 100;
+	font-size: 1.3em;
+}
+.newsletter input{
+	padding: 10px 30px 10px 10px;
+	border-radius: 5px;
+	border:  1px solid #000;
+}
+.newsletter p{
+	font-family: "Oswald", sans-serif;
+	font-weight:  100;
+	font-size: 1.1em;
+}
+.newsletter .btn{
+	padding:  11px 20px;
+	border-radius: 5px;
+	color:  #fff;
+	background-color: #B93620;
+	border:  none;
+	text-transform: uppercase;
+}
+.copyright{
+	padding: 0 0 30px 90px;
+	margin:  0;
+}

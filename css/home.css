@@ -1,0 +1,30 @@
+*{
+	list-style: none;
+}
+.produtos{
+	display: flex;
+	flex-wrap: wrap;	
+}
+.produtos li{	
+	max-width: 33%;
+	text-align: center;
+	padding: 30px;
+	margin: 30px 0; 	
+} 
+.produtos li h4{
+	display: inline-block;
+}
+.produtos li img{	
+	max-width: calc(100% - 2em);
+}
+.produtos li span{
+	color:  #ff0000;
+}
+
+#lightBoxBg {
+	position:  fixed;
+	min-height: 100%;
+	min-width: 100%;
+}
+
+
