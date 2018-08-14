@@ -1,20 +1,18 @@
-$(function(){
+$(function () {
+	const base_url = '../potions.json';
 
-	// var $produtos = $('#potions');
-	// $.ajax({		
-	// 	url:'https://api.myjson.com/bins/ovemf',
-	// 	type: 'get',
-	// 	dataType: 'json',
-	// 	success: function(potions) {			
-	// 		$.each(potions, function(i, potion){
-	// 			$produtos.append('<li>' + potions.name + '</li>');
-
-	// 		})
-	// 	}
-	// })
-	$.getJSON('http://localhost:3000/potions', function(obj){
-		$.each(obj, function(key, value){
-			$('#potions').append('<li><img src='+value.image+'>' + '<h4>'+ value.name + '</h4><span> - $' + value.price + '</span></li>');
+	$.getJSON(base_url, (data) => {
+		$.each(data.potions, (index, value) => {
+			$('.products')
+				.append(`
+					<li onclick="openModal">
+						<img src="${value.image}" alt="${value.name}" class="img-responsive">
+						<h4>${value.name} -</h4>
+						<span> $${value.price}
+					</li>`)
 		})
 	})
-});
+})
+function openModal(){
+	document.getElementById('main_content').innerHTML('Teste');
+}

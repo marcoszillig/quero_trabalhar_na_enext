@@ -34,13 +34,18 @@ footer{
 }
 .social-media li{
 	display: inline-block;
-	padding:  20px;
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	background-color: #3870B9;
+	overflow: hidden;
 }
 .social-media li a i {
-  	font-size: 3em; 
+	font-size: 2.8em;
+	background-color: #fff;
+	line-height:0.8em;
 }
 .newsletter{
-	margin-left:  20%;
 	background-color: #fff;
 	border-radius:  5px;
 	padding: 30px;
